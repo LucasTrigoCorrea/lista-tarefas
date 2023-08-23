@@ -1,6 +1,8 @@
-.container {
+section.container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 640px;
+  max-width: 740px;
   margin: 50px auto;
   background: #100e12;
   padding: 40px 60px;
@@ -8,54 +10,63 @@
   box-shadow: 2px 2px 15px 2px #6a6a6a92;
   border-radius: 20px;
 }
-.container h1 {
+section.container h1 {
   color: var(--cor-principal);
   font-size: 2rem;
   font-family: var(--bold);
   margin-bottom: 20px;
 }
+section.container p {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 
 
-input.input-tarefa {
+section.container input.input-tarefa {
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
   height: 50px;
+  width: 350px;
   padding: 0 20px;
   border-radius: 15px;
   font-family: var(--regular);
 }
 
-input:focus {
+section.container p input:focus {
   outline: 1px solid var(--cor-principal);
 }
 
-button.btn-tarefa {
+section.container p button.btn-tarefa {
   border: none;
   background: var(--cor-principal);
   padding: 5px 10px;
   font-size: 1rem;
   height: 50px;
   cursor: pointer;
-  margin-top: 10px;
-  margin-left: 10px;
   border-radius: 15px;
   font-family: var(--regular);
   transition: all 0.5s;
 }
 
-button.btn-tarefa:hover {
+section.container p button.btn-tarefa:hover {
   scale: 1.1;
   box-shadow: 2px 2px 10px 2px var(--cor-principal);
 }
-.tarefas {
+section.container .li-tarefas .tarefas {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
   font-family: var(--regular);
   color: var(--cor-branco);
   margin-top: 30px;
   margin-left: 20px;
   gap: 15px;
 }
-.tarefas button{
+section.container .tarefas button{
   color: var(--cor-fundo);
   font-family: var(--regular);
   background-color: var(--cor-principal);
@@ -64,7 +75,7 @@ button.btn-tarefa:hover {
   transition: all 0.3s;
   margin-left: 20px;
 }
-.tarefas button:hover {
+section.container .tarefas button:hover {
   background-color: var(--cor-fundo);
   border: 1px solid var(--cor-principal);
   color: var(--cor-branco);
