@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  max-width: 640px;
+  margin: 50px auto;
+  background: #100e12;
+  padding: 40px 60px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px 2px #6a6a6a92;
+  border-radius: 20px;
+}
+.container h1 {
+  color: var(--cor-principal);
+  font-size: 2rem;
+  font-family: var(--bold);
+  margin-bottom: 20px;
+}
+
+
+input.input-tarefa {
+  font-size: 1rem;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 15px;
+  font-family: var(--regular);
+}
+
+input:focus {
+  outline: 1px solid var(--cor-principal);
+}
+
+button.btn-tarefa {
+  border: none;
+  background: var(--cor-principal);
+  padding: 5px 10px;
+  font-size: 1rem;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 15px;
+  font-family: var(--regular);
+  transition: all 0.5s;
+}
+
+button.btn-tarefa:hover {
+  scale: 1.1;
+  box-shadow: 2px 2px 10px 2px var(--cor-principal);
+}
+.tarefas {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--regular);
+  color: var(--cor-branco);
+  margin-top: 30px;
+  margin-left: 20px;
+  gap: 15px;
+}
+.tarefas button{
+  color: var(--cor-fundo);
+  font-family: var(--regular);
+  background-color: var(--cor-principal);
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-left: 20px;
+}
+.tarefas button:hover {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-principal);
+  color: var(--cor-branco);
+  box-shadow: 2px 2px 10px 2px var(--cor-principal);  
+}
